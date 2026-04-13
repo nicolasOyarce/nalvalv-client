@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  /* Material Design 3 color tokens */
+  --color-on-tertiary-fixed-variant: #3d4759;
+  --color-outline: #71787c;
+  --color-error-container: #ffdad6;
+  --color-on-surface-variant: #41484c;
+  --color-on-secondary-fixed: #111c2c;
+  --color-primary-fixed-dim: #a3cce2;
+  --color-secondary: #545f72;
+  --color-on-secondary-fixed-variant: #3c475a;
+  --color-on-primary-fixed-variant: #224c5d;
+  --color-tertiary-fixed-dim: #bdc7dc;
+  --color-tertiary-container: #252f40;
+  --color-inverse-on-surface: #ecf0ff;
+  --color-surface-tint: #3b6376;
+  --color-on-primary-fixed: #001f2a;
+  --color-surface-container-highest: #dde2f3;
+  --color-background: #f9f9ff;
+  --color-tertiary-fixed: #d9e3f9;
+  --color-error: #ba1a1a;
+  --color-on-primary-container: #749cb0;
+  --color-surface-bright: #f9f9ff;
+  --color-surface-container-low: #f1f3ff;
+  --color-surface: #f9f9ff;
+  --color-inverse-surface: #2a303d;
+  --color-on-tertiary-container: #8c97ab;
+  --color-secondary-fixed: #d8e3fa;
+  --color-primary: #001d28;
+  --color-surface-dim: #d4daea;
+  --color-on-background: #161c27;
+  --color-inverse-primary: #a3cce2;
+  --color-on-primary: #ffffff;
+  --color-on-tertiary: #ffffff;
+  --color-surface-variant: #dde2f3;
+  --color-on-secondary-container: #586377;
+  --color-on-surface: #161c27;
+  --color-outline-variant: #c1c7cc;
+  --color-primary-fixed: #bfe9ff;
+  --color-on-error-container: #93000a;
+  --color-on-tertiary-fixed: #121c2c;
+  --color-secondary-container: #d5e0f7;
+  --color-surface-container-high: #e3e8f9;
+  --color-on-error: #ffffff;
+  --color-secondary-fixed-dim: #bcc7dd;
+  --color-on-secondary: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-tertiary: #101a2a;
+  --color-surface-container: #e8eeff;
+  --color-primary-container: #003344;
+
+  /* Border radius — sharp by design, only full is rounded */
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-full: 9999px;
+
+  /* Font families */
+  --font-headline: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9ff;
+}
+
+.sharp-0 {
+  border-radius: 0px !important;
+}

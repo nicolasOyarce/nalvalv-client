@@ -16,7 +16,28 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
+
+## Project Structure
+
+The project follows a `src`-first layout for better scalability and separation of concerns:
+
+```text
+src/
+	app/                        # App Router entry (routes, layout, global styles)
+	features/
+		landing/
+			sections/               # Page-specific sections for the landing
+	shared/
+		layout/                   # Reusable layout components (Navbar, Footer)
+```
+
+Guidelines used:
+
+- Keep route files inside `src/app`.
+- Group UI by domain under `src/features`.
+- Place reusable cross-page components under `src/shared`.
+- Use path alias `@/*` mapped to `src/*`.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
